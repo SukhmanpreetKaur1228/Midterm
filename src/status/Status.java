@@ -16,7 +16,11 @@ import status.StausUser.StatusS;
  * change the code to use enums which avoids String input 
  * then print the status details. 
  * @author srinivsi date:Feb 22
+ * @author Sukhmanpreet Kaur
  */
+/*
+Student Id- 991631228
+*/
 public class Status {
 
     /**
