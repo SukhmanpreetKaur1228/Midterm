@@ -9,20 +9,34 @@ package status;
  * MidTerm Exam
  * @author srinivsi
  */
+
 public class StausUser 
 {
-   public void statusDetail(String code)
+    public enum StatusS{
+        ZERO("0"),ONE("1"),TWO("2"),THREE("3");
+        public String code;
+        StatusS(String code){
+            this.code=code;
+        }
+
+        @Override
+        public String toString() {
+            return code;
+        }
+
+    }
+   public void statusDetail(StatusS code)
 {
-switch(code.toUpperCase())
+switch(code)
         {
-        case "ZERO": System.out.println("REJECTED");
+        case ZERO: System.out.println("REJECTED");
         break;
-        case "ONE": System.out.println("PENDING");
+        case ONE: System.out.println("PENDING");
         break;
-        case "TWO":
+        case TWO:
         System.out.println("PROCESSING");
         break;
-        case "THREE": 
+        case THREE: 
             System.out.println("APPROVED");
         break;
         default:
